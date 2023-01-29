@@ -1,0 +1,26 @@
+@import url("reset.css");
+h1{
+	color: blueviolet;
+}
+ul li{
+	color: rgb(207, 155, 255);
+}
+ul+p{
+	color: rgb(249, 195, 0);
+}
+#info > p{
+	color: rgb(38, 144, 100);
+}
+#synop h3, 
+#acteur h3{
+	color: rgb(234, 157, 140);
+}
+#info ~ p{
+	color: red;
+}
+#info > p{
+	color: rgb(0, 110, 255);
+}
+span{
+	color: aquamarine;
+}
