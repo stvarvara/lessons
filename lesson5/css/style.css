@@ -1,0 +1,51 @@
+/* ----------------- */
+/* --RESET STYLES--- */
+/* ----------------- */
+@import url("reset.css");
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,500,700&display=swap);
+
+
+
+body {
+	font-family: "Poppins";
+	padding: 20px 100px;
+	
+}
+h2{
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 140%;
+	margin-bottom: 40px;
+}
+.intro h2{
+	width: 60%;
+}
+.intro, .failure, .fin {
+	width: 70%;
+	margin: 0 auto;
+}
+ p{
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 25px;
+	color: #6C757D;
+	margin-bottom: 25px;
+}
+.intro+img{
+	margin: 55px 0 80px;
+	width: 100%;
+}
+.failure h2{
+	width: 75%;
+}
+.images{
+	text-align: center;
+	margin-bottom: 80px;
+}
+.images img{
+	width: 45%;
+}
+.images img:first-child{
+	margin-right: 30px;
+}
