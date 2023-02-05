@@ -1,0 +1,15 @@
+/*----------------- Підключення шрифтів ----------------------- */
+
+/* Google Fonts */
+
+
+/* Підключення вручну */
+
+@font-face {
+	font-family: 'Duke Charming';
+	src: url('../fonts/DukeCharming-Regular.woff') format('woff2'),
+		 url('../fonts/DukeCharming-Regular.woff2') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
