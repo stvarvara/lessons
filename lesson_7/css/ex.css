@@ -1,0 +1,114 @@
+@import url("reset.css");
+@import url(https://fonts.googleapis.com/css?family=Rubik:regular,700,900,italic&display=swap);
+body {
+    font-family: "Rubik";
+    font-size: 20px;
+    font-weight: 400;
+}
+header,footer{
+    padding: 20px;
+}
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px 15px;
+
+}
+main{
+    background-image: url(../img/cofback.jpg);
+
+}
+header{
+    border: 2px solid brown;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background: #C2B280 url(../img/cofback.jpg) 0/50% no-repeat;
+}
+header p, footer p{
+    color: beige;
+    text-align: start;
+    margin: 20px 0;
+
+}
+header h1{
+    color: #6E260E;
+    font-size: 50px;
+    font-weight: 700;
+    text-decoration: underline;
+
+}
+header h2, footer h2{
+    font-size: 40px;
+    font-style: italic;
+    color: #C19A6B;
+}
+footer{
+    background-color: #D27D2D;
+    border: 4px dotted #D27D2D	;
+    text-align: center;
+    background-image: url(../img/cof4.avif);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-attachment: fixed;
+    background-size: cover;
+   
+}
+.list{
+    text-align: start;
+}
+.list li{
+    font-size: 40px;
+    background: url(../img/icons/coffee-cup.png) 0 0 / contain no-repeat;
+    padding-left: 50px;
+    padding-top: 5px;
+    color: #6E260E;
+}
+.headerdiv{
+    margin: 20px 0;
+    padding: 50px;
+    border-radius: 20px;
+    background: rgb(110,38,14);
+    background: radial-gradient(circle, rgba(110,38,14,1) 0%, rgba(194,178,128,1) 100%);
+}
+.section{
+    background-color:#C2B280 ;
+    padding: 20px;
+    text-align: end;
+    color: beige;
+}
+.section h3{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+.section p{
+    margin-bottom: 15px;
+
+}
+.images , .images1{
+    padding: 15px;
+    font-size: 0;
+    text-align: center;
+    
+}
+.images img{
+    max-width: 300px;
+    max-height: 300px;
+    margin:  20px;
+}
+.images1 img{
+    max-width: 500px;
+    max-height: 500px;
+
+}
+
+footer p{
+    color: #f2d377;
+    padding: 50px;
+    text-indent: 100px;
+    font-weight: 900;
+}
+
+    
