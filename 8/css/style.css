@@ -1,0 +1,230 @@
+@import url("reset.css");
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,regular,800&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Inter:500,600,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,700,800&display=swap);
+
+
+
+[class*="__container"] {
+	max-width: 1270px;
+	margin: 0 auto;
+	padding:  15px;
+}
+.speaker {
+	font-family: "Inter";
+	background: url(../img/musbackgr.png) center/cover;
+	height: 560px;
+	width:100%;
+	margin-bottom: 100px;
+}
+.speak_text {
+	max-width: 570px;
+	display: inline-block;
+	margin-top: 10% ;
+}
+
+.speak_photo{
+    width: 25%;
+    margin-left: 180px;
+    margin-top: 5%;
+}
+.speak_t *:not(:last-child) {
+	margin-bottom: 15px;
+}
+.speak_t h3{
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 1.33;
+	color: #3056D3;
+
+}
+.speak_t{
+	margin-bottom: 35px ;
+}
+.speak_t h2{
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.25;
+	color: #212B36;
+
+}
+.speak_t h3:last-of-type{
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #637381;
+}
+.speak_button {
+	padding: 10px 30px;
+	color: white;
+	background: #3056D3;
+	border-radius: 30px;
+	font-family: 'Inter';
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.5;
+	width: 140px;
+}
+.speak_button a{
+	display: inline-block;
+}
+.speak_button:hover{
+	background: white;
+	color: #3056D3;
+	
+}
+.speak_button:active{
+	box-shadow: 0 0 10px #3056D3;
+}
+.list{
+	font-family: 'Inter';
+	margin-bottom: 100px;
+}
+.list_div1, .list_div2, .list_div3{
+	display: inline-block;
+	width: 30%;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 0.94;
+	color: #637381;
+
+}
+.list_div1,  .list_div2{
+	margin-right: 4%;
+	margin-top: 30px;
+}
+.list h2{
+	font-weight: 400;
+	font-size: 26px;
+	line-height: 1.08;
+	color: #212B36;
+}
+.list  li:not(:last-child) {
+	margin-bottom: 20px;
+}
+.list_item:not(:last-child){
+	margin-bottom: 60px;
+}
+.list_div1 .list_item:first-child li::before{
+	content: "";
+	display: inline-block;
+	background: url("../img/icons/circle.png") 6px  no-repeat;
+	width: 16px;
+	height: 10px;
+	margin-right: 10px;
+}
+.list_div1 .list_item:last-child li::before{
+	content: "";
+	display: inline-block;
+	background: url("../img/icons/no.png")   no-repeat;
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+	margin-bottom: -5px;
+}
+.list_div2 .list_item:first-child li::before{
+	content: "";
+	display: inline-block;
+	background: url("../img/icons/yes_blue.png") 6px  no-repeat;
+	width: 26px;
+	height: 20px;
+	margin-right: 10px;
+	margin-bottom: -5px;
+}
+.list_div2 .list_item:last-child li::before{
+	content: "";
+	display: inline-block;
+	background: url("../img/icons/flesh.png")   no-repeat;
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+	margin-bottom: -5px;
+}
+.list_div3 .list_item:first-child li::before{
+	content: "";
+	display: inline-block;
+	background: url("../img/icons/yes_green.png") 6px  no-repeat;
+	width: 26px;
+	height: 20px;
+	margin-right: 10px;
+	margin-bottom: -5px;
+}
+.list_div3 .list_item:last-child li::before{
+	content: "";
+	display: inline-block;
+	background: url("../img/icons/star.png")   no-repeat;
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+	margin-bottom: -5px;
+}
+.building{
+	font-family: 'Poppins';
+	background: url(../img/build.png) center/cover;
+	width: 100%;
+	height: 600px;
+	margin-bottom: 100px;
+}
+.building__text{
+	max-width: 605px;
+	margin-top: 27%;
+	margin-left: 7%;
+
+}
+.building__text h3:first-of-type{
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 1.67;
+	color: #E5E5E5;
+}
+.building__text h2{
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 1.6;
+	color: #F8F9FA;
+	
+}
+.building__text h3:last-of-type{
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 1.67;
+	color: #E5E5E5;
+	max-width: 500px;
+}
+.test{
+	width: 100%;
+	background: rgb(238,174,202);
+	background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+	font-family: "Rubik";
+	color: #F8F9FA;
+}
+.test__link {
+	padding: 10px;
+	background-color: palevioletred;
+	border-radius: 100% 0% 86% 14% / 53% 0% 100% 47% ;
+	max-width: 200px;
+	text-align: center;
+	height: 40px;
+	margin: 0 auto;
+	font-weight: 700;
+
+}
+.test__link:hover{
+	background-color: purple;
+	border-radius: 80% 20% 89% 11% / 48% 63% 37% 52%;
+	color: palevioletred;
+
+}
+.test_text p:not(:last-child){
+	margin: 20px 0;
+}
+.test__link:hover + .test_text p:first-of-type {
+	color: palevioletred;
+}
+.test__link:active + .test_text p:nth-child(2) {
+	color: mediumslateblue;
+}
+.test__link:hover + .test_text p:last-of-type::after{
+	content: " I am an after";
+	color: chocolate;
+}
