@@ -1,0 +1,202 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+Lao:regular&display=swap');
+body{
+    font-family: "Noto Serif Lao", sans-serif;
+}
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+   transform-style: preserve-3d;
+   text-align: center;
+}
+.try{
+       display: inline-block;
+    padding: 50px;
+    background-color: #C38D9E;
+    color: white;
+    width: 25%;
+    margin: 30px 0;
+    text-align: center;
+}
+.try1:hover{
+    
+    transform: translate(20px,-30px);
+    transform: translate(130%, 115%);/*от размеров предмета*/
+}
+.try2:hover{
+    transform:  scale(0.5);
+}
+.try3:hover{
+    transform:  rotate(20deg);
+    transform-origin: bottom;
+}
+.try4:hover{
+    transform:  skew(20deg, 20deg);
+}
+.try5{
+    height: 80px;
+}
+.try5:hover{
+    transform:  translate(50px, 50px) scale(0.5) rotate(45deg);
+}
+.try6:hover{
+transform: translate3d(20px, 20px, 50px);
+}
+
+.try7:hover{
+    transform: scale3d(2, 2, 5);
+}
+.try8:hover{
+    transform: rotateX(50deg  )
+}
+.auto{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20%;
+    padding: 150px 0;
+}
+.voiture{
+    position: relative;
+    
+}
+.voiture__pneau{
+    border-radius: 50% 50% 49% 51% / 48% 50% 50% 52%;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    bottom: 10px;
+    z-index: 10;
+    border: 5px solid white;
+}
+.voiture__pneau:hover{
+    transform: scale3d(2,2,2);
+}
+.voiture__pneau-1{
+    left: 30%;
+    
+}
+.voiture__pneau-2{
+    right: 37%;
+}
+.voiture__pneau-small{
+    background-color: gray;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    border: 2px solid black;
+}
+.voiture__body{
+    background-color: rgb(0, 174, 255);
+    width: 33%;
+    height: 100px;
+    position: absolute;
+    bottom: 55px;
+    left: 30%;
+   
+
+}
+.voiture__glutes{
+    border-radius: 52% 48% 0% 52% / 39% 0% 25% 25%;
+    background-color: rgb(0, 174, 255);
+    width: 5%;
+    height: 100px;
+    position: absolute;
+    bottom: 55px;
+    left: 26%;
+
+}
+.voiture__glutes-1{
+    right: 33%;
+    left: initial;
+    transform: rotate(180deg);
+}
+.voiture__cabine{
+    background-color: rgb(0, 174, 255);
+    border-radius: 52% 48% 12% 13% / 71% 75% 25% 26%;
+    width: 20%;
+    height: 150px;
+    position: absolute;
+    bottom: 120px;
+    left: 37%;
+
+}
+.voiture__tube{
+    border-radius: 30% 31% 30% 33% / 43% 37% 42% 40%;
+    background-color: rgb(181, 181, 181);
+    width: 55px;
+    height: 25px;
+    position: absolute;
+    right:  50%;
+}
+.voiture__tube-1{
+    top: 50%;
+    
+
+}
+.voiture__tube-2{
+    bottom: 50%;
+    
+}
+.voitre__light{
+    border-radius: 49% 51% 50% 50% / 49% 49% 50% 51%;
+    position: absolute;
+
+}
+.voitre__light-small{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    z-index: -1;
+    left: -15%;
+    top: 10%;
+
+}
+.voitre__light-big{
+    width: 40px;
+    height: 40px;
+    background-color: yellow;
+    top: 53%;
+    right: 56%;
+}
+.voiture__window{
+    position: absolute;
+    background-color: white;
+    height: 80px;
+    width: 70px;
+    bottom: 24%;
+
+}
+.voiture__window-left {
+    border-radius: 72% 0% 0% 0% / 73% 78% 22% 27%;
+    left: 7%;
+}
+.voiture__window-middle {
+    left: 37%;
+}
+.voiture__window-right {
+    border-radius: 25% 66% 25% 25% / 0% 52% 0% 0%;
+    right: 7%;
+}
+.voitre__light:hover{
+    background-color: rgb(255, 255, 119);
+    transform: translate(10px,0);
+}
+.voiture__tube:hover{
+    transform: scale(0.5);
+    background-color: blue;
+}
+.voiture__body:hover {
+    transform:  skew(20deg, 20deg);
+}
+.voiture__glutes:hover{
+    transform: translate3d(20px, 20px, 50px);
+}
+.voiture__window:hover{
+    background-color: chartreuse;
+    transform: scale3d(0.5, 0.5, 0.5);
+
+}
