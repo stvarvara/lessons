@@ -1,0 +1,154 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+Lao:regular&display=swap');
+body{
+    font-family: "Noto Serif Lao", sans-serif;
+    background-color: skyblue;
+    color: #fff;
+    
+}
+.wrapper{
+    overflow: clip;
+	min-height: 100%;
+}
+[class*="__container"] {
+	max-width: 1270px;
+	margin: 0 auto;
+	padding:  15px;
+}
+.car{
+    padding: 200px 0;
+    text-align: center;
+    animation: cars 7s linear forwards;
+    
+}
+@keyframes cars{
+    0%{
+        transform: translate(-500px);
+    }
+    25%{
+        transform: translate(0);
+    }
+    50%{
+        transform: translate(200px,0);
+    }
+    100%{
+        transform: translate(5000px,0);
+    }
+}
+.car__body::after{
+    content: "";
+    background-color: gold;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border-radius: 50%;
+    right: -10px;
+    top: 20px;
+    animation: light 2s ease 3s;
+}
+.car__body{
+    display: inline-block;
+    background-color: white;
+    width: 500px;
+    height: 100px;
+    position: relative;
+}
+.car__top{
+    background-color: white;
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    top: -95px;
+    left: 100px;
+    border-radius: 24% 24% 0% 0% / 19% 22% 43% 40%;
+}
+.car__window{
+    background-color: black;
+    position: absolute;
+    height: 70px;
+    border: 3px dotted gray;
+    animation: window 2s ease forwards 3s;
+}
+.car__window:first-child{
+    width: 100px;
+    top: 15px;
+    left: 20px;
+}
+.car__window:last-child{
+    width: 150px;
+    top: 15px;
+    right: 20px;
+}
+.car__wheel{
+    width:80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: black;
+    outline: 3px dotted gray;
+    position: absolute;
+    top: -40px;
+    animation: wheel 3s linear 3s;
+
+}
+.car__wheels{
+    position: relative;
+    width: 250px;
+    margin: 0 auto;
+
+}
+.car__wheel:first-child{
+    left: -95px;
+}
+.car__wheel:last-child{
+    right: -95px;
+}
+@keyframes wheel {
+    0%{
+        transform: rotate(0deg);
+
+    }
+    25%{
+        transform: rotate(20deg);
+        background-color: gray;
+        outline: 3px dotted black;
+    }
+    100%{
+        transform: rotate(1800deg);
+    }
+}
+@keyframes window {
+    0%{
+        background-color: black;
+
+    }
+    100%{
+        background-color: skyblue;
+    }
+}
+@keyframes light{
+    0%{
+       background-color: gold;
+       border: none;
+
+    }
+    25%{
+       background-color: #fff;
+       border: 2px solid gold;
+       
+    }
+    50%{
+        background-color: gold;
+        border: none;
+ 
+    }
+    75%{
+        background-color: #fff;
+        border: 2px solid gold;
+    }
+    100%{
+        background-color: gold;
+        border: none;
+    }
+
+}
+
