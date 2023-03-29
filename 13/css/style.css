@@ -1,0 +1,106 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+Lao:regular&display=swap');
+body{
+    font-family: "Noto Serif Lao", sans-serif;
+    background-color: skyblue;
+    color: #fff;
+    
+}
+.wrapper{
+    overflow: hidden;
+	min-height: 100%;
+}
+[class*="__container"] {
+	max-width: 1270px;
+	margin: 0 auto;
+	padding:  15px;
+}
+.car{
+    padding: 200px 0;
+    text-align: center;
+    position: relative;
+    animation: car 7s linear forwards;
+    
+}
+
+.car__wheel{
+    width:125px;
+    height: 125px;
+    border-radius: 50%;
+    background-color: black;
+    outline: 3px dotted gray;
+    position: absolute;
+    top: -40px;
+    animation: wheel 3s linear 3s;
+
+}
+
+.car__wheel:first-child{
+    top: 58%;
+    left: 25.5%;
+}
+.car__wheel:last-child{
+    top:58%;
+    right: 24%;
+}
+@keyframes wheel {
+    0%{
+        transform: rotate(0deg);
+
+    }
+    25%{
+        transform: rotate(20deg);
+        background-color: gray;
+        outline: 3px dotted black;
+    }
+    100%{
+        transform: rotate(1800deg);
+    }
+}
+
+@keyframes car {
+    0%{
+        transform: translate(-1000px,0);
+
+    }
+    50%{
+        transform: translate(0,0);
+    }
+    100%{
+        transform: translate(5000px,-1000px);
+    }
+}
+@keyframes cloud {
+    0%{
+        transform: translate(0,0) scale(0.5);
+
+    }
+    25%{
+        transform: translate(100px,10%) scale(1);
+    }
+    100%{
+        transform: translate(200px, 20%);
+
+    }
+}
+.clouds img{
+    width: 25%;
+    position: absolute;
+    animation: cloud 10s infinite ease alternate-reverse ;
+}
+.clouds img:first-child{
+    top: -10%;
+    left: 0;
+}
+.clouds img:nth-child(2){
+    left: 40%;
+}
+.clouds img:nth-child(3){
+    width: 15%;
+    left: 25%;
+    top: -10%;
+}
+.clouds img:nth-child(4){
+    left: 70%;
+    top: -22%;
+}
